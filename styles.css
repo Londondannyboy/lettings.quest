@@ -519,62 +519,76 @@ p {
     margin-bottom: 12px;
 }
 
-/* Testimonials */
-.testimonials {
+/* Case Study */
+.case-study {
     padding: 100px 0;
+    background: var(--background-alt);
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+.case-study-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.testimonial-card {
-    padding: 32px;
-    background: var(--background);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-}
-
-.testimonial-content p {
-    font-size: 1rem;
-    color: var(--text);
-    font-style: italic;
-    margin-bottom: 24px;
-    line-height: 1.7;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.author-avatar {
-    width: 48px;
-    height: 48px;
-    background: var(--gradient);
-    color: white;
+.case-study-label {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    font-size: 0.875rem;
     font-weight: 600;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 100px;
+    margin-bottom: 24px;
 }
 
-.author-info {
+.case-study-content h2 {
+    margin-bottom: 48px;
+}
+
+.case-study-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-bottom: 48px;
+}
+
+.highlight-stat {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.author-info strong {
-    color: var(--secondary);
+.highlight-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
-.author-info span {
-    font-size: 0.875rem;
+.highlight-label {
+    font-size: 0.9375rem;
     color: var(--text-light);
+    font-weight: 500;
+}
+
+.case-study-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: var(--text);
+}
+
+.case-study-cta {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.case-study .btn {
+    margin-top: 8px;
 }
 
 /* Pricing */
@@ -815,9 +829,12 @@ p {
     }
 
     .features-grid,
-    .testimonials-grid,
     .pricing-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-study-highlight {
+        gap: 40px;
     }
 
     .pricing-card.featured {
@@ -859,9 +876,17 @@ p {
     }
 
     .features-grid,
-    .testimonials-grid,
     .pricing-grid {
         grid-template-columns: 1fr;
+    }
+
+    .case-study-highlight {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .highlight-number {
+        font-size: 2.5rem;
     }
 
     .form-row {
@@ -876,7 +901,7 @@ p {
     .problem-section,
     .solution-section,
     .how-it-works,
-    .testimonials,
+    .case-study,
     .pricing,
     .cta-section {
         padding: 60px 0;

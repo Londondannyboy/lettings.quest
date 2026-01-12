@@ -78,8 +78,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe feature cards, testimonials, and steps
-document.querySelectorAll('.feature-card, .testimonial-card, .step, .pricing-card').forEach(el => {
+// Observe feature cards, steps, and pricing cards
+document.querySelectorAll('.feature-card, .step, .pricing-card, .highlight-stat').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
